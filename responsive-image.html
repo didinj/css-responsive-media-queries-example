@@ -1,0 +1,21 @@
+<img
+  src="image-small.jpg"
+  srcset="image-small.jpg 480w, image-medium.jpg 768w, image-large.jpg 1200w"
+  sizes="(max-width: 768px) 100vw, 50vw"
+  alt="Responsive Example"
+/>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adaptive Media with Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: #111;
+      color: #eee;
+    }
+  }
+</style>

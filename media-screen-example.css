@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f4f4f4;
+  }
+}
+
+@media print {
+  body {
+    color: black;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .menu {
+    display: none;
+  }
+}

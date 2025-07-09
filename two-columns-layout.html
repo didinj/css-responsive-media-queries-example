@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Main Content</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: #eee;
+  }
+
+  .content {
+    flex: 3;
+    background-color: #ddd;
+  }
+
+  /* Responsive adjustment for screens 768px and below */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>

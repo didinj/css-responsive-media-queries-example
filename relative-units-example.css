@@ -1,0 +1,19 @@
+body {
+  font-size: 1rem; /* base size */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* Scale up font on large screens */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Use vieport-based unit */
+h1 {
+  font-size: calc(1.2rem + 2vw);
+}

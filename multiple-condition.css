@@ -1,0 +1,36 @@
+/* Combine Conditions */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .sidebar {
+    display: block;
+  }
+}
+
+/* Target Multiple Ranges */
+@media (max-width: 600px), (min-width: 1200px) {
+  .promo-banner {
+    display: none;
+  }
+}
+
+/* Dark Mode Support with prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+}
+
+/* Accessibility Queries */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Custom Ranges and Fluid Responsiveness */
+@media (min-width: 700px) and (max-width: 999px) {
+  .card {
+    grid-template-columns: 1fr 2fr;
+  }
+}
